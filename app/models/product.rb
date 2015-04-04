@@ -22,7 +22,7 @@ class Product < ActiveRecord::Base
 	}
 
   def self.populate_raw
-    100.times do
+    1000.times do
       Product.create(title: "prini", description: "testing", image_url: "google.png", price: 450)
     end
   end
